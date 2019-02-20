@@ -1,5 +1,5 @@
 # PIOF - PHP Instrumentation Open Framework
-![PIOF - PHP Instrumentation Open Framework](https://gitlab.com/rhpco/piof/raw/master/images/headerlogo.png)
+![PIOF - PHP Instrumentation Open Framework](https://github.com/ingenuity-ninja/piof/raw/master/images/headerlogo.png)
 
 # What
 PIOF - Is a dynamic and modulable instrumentation framework for PHP language.
