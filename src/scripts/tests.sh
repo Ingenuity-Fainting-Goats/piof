@@ -18,7 +18,7 @@ testCode 'echo md5( "ciao");'
 testCode 'echo md5( "asd" );'
 testCode 'include("notfound.php");'
 testCode 'system( "id");'
-testCode 'eval("$var = 41;");'
+#testCode 'eval("$var = 41;");'
 sleep 2
 echo "[i] Log Debug /var/log/piof.debug.log...."
 tail /var/log/piof.debug.log
