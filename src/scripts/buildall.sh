@@ -11,6 +11,8 @@ popd () {
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 SRCPATH=$SCRIPTPATH/..
 
+make clean
+phpize clean
 pwd
 ./scripts/buildhooks.sh
 
@@ -19,8 +21,7 @@ pushd $SRCPATH
 echo "[+] Building Extension....\n"
 
 
-make clean
-phpize clean
+
 
 phpize
 ./configure --enable-piof
