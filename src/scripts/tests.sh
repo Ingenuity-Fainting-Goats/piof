@@ -10,7 +10,8 @@ SRCPATH=$SCRIPTPATH/..
 testCode(){
     echo "#############################"
     echo "Testing command: $1"
-    (cd $SRCPATH/modules && php -dextension=./piof.so -r "$1")
+    #(cd $SRCPATH/modules && php -dextension=./piof.so -r "$1")
+    (cd $SRCPATH/modules && php  -r "$1")
     echo "#############################"
 }
 
