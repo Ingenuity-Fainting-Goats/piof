@@ -8,9 +8,6 @@
 #include <syslog.h>
 
 
-#define HANDLERS_POSITIONS "/opt/phprasp/php-extension/hooks_build/"
-#define HANDLER_EXTENSION ".so"
-#define HOOK_POSTFIX "_hook"
 
 
 int file_exists(const char *filename)
