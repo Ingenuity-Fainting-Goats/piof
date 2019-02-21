@@ -2,17 +2,17 @@
 ![PIOF - PHP Instrumentation Open Framework](https://github.com/ingenuity-ninja/piof/raw/master/images/headerlogo.png)
 
 # What
-PIOF - Is a dynamic and modular instrumentation framework for PHP language.
+PIOF - Is a dynamic and modular instrumentation framework for PHP.
 
 # Why
-It could be useful for Developers, Reverse Engineers, Malware Analyst, Vulnerability Researcher.
-With PIOF you should be able to perform:
+It is useful for Developers, Reverse Engineers, Malware Analyst and Vulnerability Researcher.
+With PIOF you can:
 
-- Debugging, Tracing and Performance analysis
-- Instrument code without touching the PHP code
+- Perform debugging, tracing and performance analysis
+- Instrument PHP code on the interpreter layer
 - Instrument obfuscated PHP code
 - Virtual Patching 
-- Prototype IAST and RASP technology
+- Prototype IAST and RASP technologies
 
 # Where
 Tested on:
@@ -34,12 +34,12 @@ cd piof
 ./run.sh
 ```
 ## Docker
-A Docker is used for building and testing process, use the opened shell to interact with the docker machine
+A Docker container is used for the building and testing stages. Use the container shell to interact with the PIOF environment:
 ```
 root@4e7b7dd9f362:/opt/piof/modules#
 ```
 ## Extension
-The generated extension is available in the following directory `/opt/piof/modules`
+The generated PHP extension is available in `/opt/piof/modules`
 ```
 root@4e7b7dd9f362:/opt/piof/modules# ls -lah
 total 100K
@@ -47,10 +47,10 @@ drwxr-xr-x 2 root root 4.0K Feb 19 20:55 .
 drwxr-xr-x 1 root root 4.0K Feb 19 20:55 ..
 -rwxr-xr-x 1 root root  91K Feb 19 20:55 piof.so
 ```
-It could be included in php.ini or used in command line execution.
+You can either include it in your php.ini or use it from the command line.
 
 ## Command line run
-The extension is enabled in the `php.ini` configuration file, so it is possible run a command like `php -r "system("ls");"`:
+When the extension is enabled in `php.ini` you can execute php as usual, for example:
 ```
 root@4e7b7dd9f362:/etc# php -r "system("ls");"
 
@@ -66,17 +66,17 @@ ca-certificates.conf
 cron.d
 [...]
 ```
-For explicit extension usage it could be used following command with same output.
+To use the module at runtime you can use the following command:
 ```
 php -dextension=/opt/piof/modules/piof.so -r "system("ls");"
 
 ```
 
 ## Logger
-All information are logged under following directory `/var/log/piof*`
+PIOF logs in `/var/log/piof*`
 
 ### Informational
-The hooking modules logs information about sink execution in logs file as shown below:
+The hooking modules logs information about sink execution:
 ```
 root@4e7b7dd9f362:/etc# tail -f /var/log/piof.info.log
 
@@ -86,11 +86,11 @@ Feb 19 21:12:17 4e7b7dd9f362 piof - md5 - hook[160]: Arguments 1
 Feb 19 21:12:17 4e7b7dd9f362 piof - md5 - hook[160]: Parameter admin
 ```
 ### Error
-All PIOF extension internal error are logged in following file `/var/log/piof.error.log` 
+All internal error are logged in `/var/log/piof.error.log` 
 
 ## Hooks Modules
-All hooks modules are in following directory `/opt/piof/hooks`. These modules are buit and loaded by the PIOF core extension so they need to be always available in pair with the `piof.so` extension.
-The modules are organized in directory, the directory name is associated to the sink name, every modules contains `hook.c` and a `hook.h` files.
+Hooking modules are in located in `/opt/piof/hooks`. These modules are dynamically built and loaded by the PIOF core extension so they need to be always available with `piof.so`.
+The modules are organized hierarchically in directories: each directory is associated to a sink, and each one contains a `hook.c` and a `hook.h` file.
 
 ```
 root@42e0da0df931:/opt/piof/hooks# ls -lah
@@ -112,7 +112,7 @@ drwxrwxr-x 1 root root 4.0K Feb 19 20:55 ..
 -rw-rw-r-- 1 root root  943 Feb 19 20:24 hook.c
 -rw-rw-r-- 1 root root  356 Feb 19 20:24 hook.h
 ```
-The building stage compile all modules and move the `.so` compiled file in following directory `/opt/piof/hooks/build`
+During the building stage PIOF compiles all modules and move the generated `.so` files in `/opt/piof/hooks/build`
 
 ```
 root@42e0da0df931:/opt/piof/hooks/build# ls -lah
