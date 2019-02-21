@@ -1,6 +1,7 @@
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-[![star this repo](http://githubbadges.com/star.svg?user=ingenuity-ninja&repo=piof&style=flat)](https://github.com/ingenuity-ninja/piof)
-[![fork this repo](http://githubbadges.com/fork.svg?user=ingenuity-ninja&repo=piof&style=flat)](https://github.com/ingenuity-ninja/piof/fork)
+![Twitter Follow](https://img.shields.io/twitter/follow/rhpco.svg?label=Twitter%20%40rhpco&style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/martinolessio.svg?label=Twitter%20%40martinolessio&style=social)
+
 
 # PIOF - PHP Instrumentation Open Framework
 ![PIOF - PHP Instrumentation Open Framework](https://github.com/ingenuity-ninja/piof/raw/master/images/headerlogo.png)
