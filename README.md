@@ -9,8 +9,8 @@ It could be useful for Developers, Reverse Engineers, Malware Analyst, Vulnerabi
 With PIOF you should be able to perform:
 
 - Debugging, Tracing and Performance analysis
-- Instrumentate code without touching the PHP code
-- Instrumentate obfuscated PHP code
+- Instrument code without touching the PHP code
+- Instrument obfuscated PHP code
 - Virtual Patching 
 - Prototype IAST and RASP technology
 
