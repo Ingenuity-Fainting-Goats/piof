@@ -39,7 +39,7 @@ A Docker is used for building and testing process, use the opened shell to inter
 root@4e7b7dd9f362:/opt/piof/modules#
 ```
 ## Extension
-The generated extension is available in the following directory
+The generated extension is available in the following directory `/opt/piof/modules`
 ```
 root@4e7b7dd9f362:/opt/piof/modules# ls -lah
 total 100K
