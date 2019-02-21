@@ -89,7 +89,7 @@ Feb 19 21:12:17 4e7b7dd9f362 piof - md5 - hook[160]: Parameter admin
 All PIOF extension internal error are logged in following file `/var/log/piof.error.log` 
 
 ## Hooks Modules
-All hooks modules are in following directory `/opt/piof/hooks`. These modules are builded and loaded by the PIOF core extension so they need to be always available in pair with the `piof.so` extension.
+All hooks modules are in following directory `/opt/piof/hooks`. These modules are buit and loaded by the PIOF core extension so they need to be always available in pair with the `piof.so` extension.
 The modules are organized in directory, the directory name is associated to the sink name, every modules contains `hook.c` and a `hook.h` files.
 
 ```
