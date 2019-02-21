@@ -2,7 +2,7 @@
 ![PIOF - PHP Instrumentation Open Framework](https://github.com/ingenuity-ninja/piof/raw/master/images/headerlogo.png)
 
 # What
-PIOF - Is a dynamic and modulable instrumentation framework for PHP language.
+PIOF - Is a dynamic and modular instrumentation framework for PHP language.
 
 # Why
 It could be useful for Developers, Reverse Engineers, Malware Analyst, Vulnerability Researcher.
