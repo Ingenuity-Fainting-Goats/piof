@@ -23,9 +23,9 @@ Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies
     with Zend OPcache v7.2.10-0ubuntu0.18.04.1, Copyright (c) 1999-2018, by Zend Technologies
 ```
 # Who
-Martino - twitter.com/martinolessio - mlessio6 [ $placeholder_at ] gmail [ $placeholder_dot ] com
+Martino - twitter.com/martinolessio
 
-Alessandro - twitter.com/rhpco - rakkapriccio [ $placeholder_at ] gmail [ $placeholder_dot ] com
+Alessandro - twitter.com/rhpco
 
 # Quick Start
 ```
