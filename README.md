@@ -6,11 +6,11 @@ PIOF - Is a dynamic and modulable instrumentation framework for PHP language.
 
 # Why
 It could be useful for Developers, Reverse Engineers, Malware Analyst, Vulnerability Researcher.
-With PIOF could be able perform:
+With PIOF you should be able to perform:
 
 - Debugging, Tracing and Performance analysis
-- Instrumentate code without touching the PHP code ( vulnerability research )
-- Instrumentate obfuscated PHP code ( malware analysis )
+- Instrumentate code without touching the PHP code
+- Instrumentate obfuscated PHP code
 - Virtual Patching 
 - Prototype IAST and RASP technology
 
